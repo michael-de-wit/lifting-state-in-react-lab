@@ -28,10 +28,11 @@ const App = () => {
   const [stack, setStack] = useState([])
 
   const addIngredient = (ingredientToAdd) => {
-    setStack([...stack, ingredientToAdd])
+    setStack([ingredientToAdd, ...stack]) // Keeps the first-added ingredient at the bottom
   }
 
   const removeIngredient = (ingredientToRemove) => {
+    console.log(stack, ingredientToRemove);
     setStack(stack.filter(ingredient => ingredient !== ingredientToRemove));
   }
 
