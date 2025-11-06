@@ -42,8 +42,11 @@ const App = () => {
         <IngredientList 
           availableIngredients={availableIngredients}
           addIngredient={addIngredient}
-          />
-        <BurgerStack removeIngredient={removeIngredient}/>
+        />
+        <BurgerStack
+          stack={stack} 
+          removeIngredient={removeIngredient}
+        />
       </section>
     </main>
   );

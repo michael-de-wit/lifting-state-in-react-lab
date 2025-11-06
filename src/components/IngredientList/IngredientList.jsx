@@ -7,7 +7,7 @@ const IngredientList = (props) => {
     const handleAdd = (event) => {
         event.preventDefault();
         console.log(`add ok`);
-        props.addIngredient(ingredient)
+        props.addIngredient(ingredientToAdd)
     }
 
     const[ingredientToAdd, setIngredientToAdd]=useState('');
